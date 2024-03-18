@@ -58,22 +58,6 @@
 
 //_________________________________________
 
-// Ejercicio N° 6:
-// Pidele al usuario que ingrese su Nombre y Apellido - luego devuelve por consola un saludo de bienvenida concatenando su nombre y apellido.
-// Ejemplo: Lionel Messi -> Bienvenido Lionel Messi 
-// Tu codigo 👇:
-
-
-//_________________________________________
-
-// Ejercicio N° 7:
-// Pidele al usuario que ingrese su Nombre y Apellido - luego devuelve por consola un saludo de bienvenida concatenando su nombre y apellido.
-// Ejemplo: Lionel Messi -> Bienvenido Lionel Messi 
-// Tu codigo 👇:
-
-
-//_________________________________________
-
 
 // 👇👇 NO MODIFICAR 👇👇
 
