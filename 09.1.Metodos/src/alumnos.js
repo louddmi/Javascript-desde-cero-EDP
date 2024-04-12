@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------NO MODIFICAR 👇-------------------------------------------------------------------//
+k//-------------------------------------------------------------------NO MODIFICAR 👇-------------------------------------------------------------------//
 const alumnos = [
     {nombre: "Juan", apellido: "Pérez", edad: 20, dni: "12345678", examen1: 75, examen2: 80, examen3: 90, trabajoPractico1: true, trabajoPractico2: false, asistencias: 15},
     {nombre: "María", apellido: "Gómez", edad: 22, dni: "87654321", examen1: 85, examen2: 90, examen3: 95, trabajoPractico1: true, trabajoPractico2: true, asistencias: 24},
@@ -28,7 +28,7 @@ let addColumn = false; // Variable que debe cambiar según -> Si existe la 4 col
 const btnDate = () =>{
 
 }
-    
+  
 
 // BOTON PROMEDIOS => Deberia devolver la tabla de alumnos con el promedio de cada alumno, este consta en 3 notas (examen1, examen2, examen3).
 const btnPromedios = () => {

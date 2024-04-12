@@ -5,13 +5,33 @@
 //Ejemplo "Bienvenido Leonardo Avila" -> IMPORTANTE la funcion tiene que llamarse 'bienvenida'
 //Tu código:
 
+const bienvenida = function(nombre, apellido) {
+    return "Bienvenido " + nombre + " " + apellido;
+}
 
 
 /**********************************************************************************/
 // Crea una funcion el cual cumpla la funcion de una calculadora.. tiene que recibir 3 parametros num1, operador y num2
 // IMPORTANTE -> la funcion debe llamarse 'calc'
 // Tu código:
-
+const calc = function(num1, operador, num2) {
+    switch (operador) {
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            if (num2 !== 0) {
+                return num1 / num2;
+            } else {
+                return 'Error: división por cero';
+            }
+        default:
+            return 'Operador no válido';
+    }
+}
 
 
 /**********************************************************************************/
@@ -25,6 +45,23 @@
 // IMPORTANTE -> la funcion debe llamarse 'temp'    
 // Tu código:
 
+const temp = function (max, min, porcentajeLluvia) {
+    let mensaje = "";
+    
+    if (max < 15) {
+        mensaje = "Es recomendable salir con abrigo";
+    } else if (max < 26 && min > 17) {
+        mensaje = "El día está lindo";
+    } else if (min > 25) {
+        mensaje = "El día estará caluroso";
+    }
+
+    if (porcentajeLluvia > 50) {
+        mensaje += ", recomendable un paraguas";
+    }
+
+    return mensaje;
+}
 
 
 /**********************************************************************************/
@@ -34,7 +71,13 @@
 // IMPORTANTE -> la funcion debe llamarse 'checkPassword'
 // Tu código:
 
-
+const checkPassword = function (contrasena) {
+    if (contrasena.length >= 8) {
+        return "La contraseña es segura";
+    } else {
+        return "La contraseña es insegura";
+    }
+}
 
 
 /**********************************************************************************/
@@ -42,6 +85,14 @@
 // IMPORTANTE -> la funcion debe llamarse 'stringInverso'
 // Tu código:
 
+const stringInverso = function (str) {
+   
+    let palabras = str.split(" ");
+ 
+    let resultado = palabras.reverse().join(" ");
+
+    return resultado;
+}
 
 
 /**********************************************************************************/

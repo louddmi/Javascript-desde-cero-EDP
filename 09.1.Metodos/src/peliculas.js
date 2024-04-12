@@ -21,30 +21,55 @@ const pelis = document.querySelector('.peli') // Obtenemos sección de pelis. do
 
 //BOTON TODOS => Debe devolver todas las portadas (img) de las peliculas que hay.
 const allFilms = () => {
-
+    peliculas.forEach(peli => {
+        pelis.innerHTML += `<img src= ${peli.img} alt= "${peli.titulo}">`
+    })
 }
-
 //BOTON ESTRENOS => Debe devolver las portadas (img) solo de las peliculas que esten en estreno 'estreno: true'
 const estrenos = () => {
+    const contenedorPeliculas = document.querySelector('.peliculas');
 
-}
-
+    const peliculasEstreno = peliculas.filter(pelicula => pelicula.estreno === true);
+    peliculasEstreno.forEach(peli => {
+        contenedorPeliculas.innerHTML += `<img src="${peli.img}" alt="${peli.titulo}">`;
+    });
+};    
 //BOTON ACCION => Debe devolver solo aquellas peliculas que contengan como genero ‘Acción’.
 const accion = () => {
-
+    const peliculasAccion = peliculas.filter(pelicula => pelicula.genero === 'Acción');
+    const contenedor = document.querySelector('.peliculas');
+    peliculasAccion.forEach(peli => {
+        contenedor.innerHTML += `<img src="${peli.img}" alt="${peli.titulo}">`;
+    });
 }
 
 //BOTON DRAMA => Debe devolver solo aquellas peliculas que contengan como genero ‘Drama’.
 const drama = () => {
+    const contenedor = document.querySelector('.peliculas');
+    const peliculaDrama = peliculas.filter(pelicula => pelicula.genero === 'Drama');
+    peliculaDrama.forEach(peli => {
+        contenedor.innerHTML += `<img src="${peli.img}" alt="${peli.titulo}">`
+    }) ;
 
 }
 
 //BOTON CRIMEN => Debe devolver solo aquellas peliculas que contengan como genero ‘Crimen’.
 const crimen = () => {
+    const contenedor = document.querySelector('.peliculas');
+    const peliculaCrimen = peliculas.filter(pelicula => pelicula.genero === 'Crimen');
+    peliculaCrimen.forEach(peli => {
+        contenedor.innerHTML += `<img src="${peli.img}" alt="${peli.titulo}">`
+    }) ;
 
 }
 
+
 //BOTON TODOS => debe devolver aquellas peliculas que NO estén dentro de los generos anteriores.
 const otros = () => {
+    const contenedor = document.querySelector('.peliculas');
+    const peliculaOtros = peliculas.filter(pelicula => pelicula.genero === 'Ciencia ficción');
+    peliculaOtros.forEach(peli => {
+        contenedor.innerHTML += `<img src="${peli.img}" alt="${peli.titulo}">`
+    }) ;
 
 }
